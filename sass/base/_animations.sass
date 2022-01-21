@@ -1,0 +1,43 @@
+.rise
+  animation-name: rise
+  animation-duration: 0.3s
+
+.down 
+  animation-name: down
+  animation-duration: 0.2s
+
+.fade-in
+  animation-name: fade-in
+  animation-duration: 0.3s
+
+.fade-out
+  animation-name: fade-out
+  animation-duration: 0.3s
+
+@keyframes rise
+  from
+    transform: translateY(3%)
+    opacity: .6
+  to
+    transform: translateY(0)
+    opacity: 1
+    
+@keyframes down
+  0%
+    transform: translateY(0)
+    opacity: .6
+  100%
+    transform: translateY(5%)
+    opacity: 0
+
+@keyframes fade-in
+  0%
+    opacity: .6
+  100%
+    opacity: 1
+
+@keyframes fade-out
+  0%
+    opacity: 1
+  100%
+    opacity: .6

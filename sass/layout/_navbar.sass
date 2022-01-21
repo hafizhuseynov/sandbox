@@ -1,0 +1,123 @@
+header
+  position: sticky
+  top: 0
+  background-color: $white
+
+  nav
+    display: flex
+    position: relative
+    justify-content: space-between
+
+    h1
+      color: $black
+      user-select: none
+      cursor: pointer
+      margin: 16px 0
+      padding: 8px
+      white-space: nowrap
+
+      //Hexagon design in logo
+      #O
+        display: inline-block
+        background-image: url('/images/logo.svg')
+        background-position-y: bottom
+        vertical-align: middle
+        width: 18px
+        height: 18px
+        background-size: cover
+
+    .middle, .right
+      display: flex
+    
+    .middle > li, .right > li
+      margin: 0 16px
+      display: flex
+      align-items: center
+      cursor: pointer
+
+      span[class*=down]
+        color: $blue
+
+      .label
+        display: inline-block
+        margin: 0 4px
+  
+    .middle
+      #demos
+        .menu
+          width: 100%
+          padding: 16px
+          background-color: $black
+          
+        li
+          width: 15.5%
+          border-radius: 16px
+          border: 2px solid white
+          height: 150px
+          float: left
+          margin: 8px
+          transition: 0.4s
+        
+        li:hover
+          transform: translateY(-5%)
+
+          
+      #pages, #projects, #blog, #blocks
+        position: relative
+      
+      #documentation
+        .menu
+          width: 100%
+          padding: 16px
+
+          .container
+            width: 33%
+            float: left
+            @include clearFix
+
+          .label
+            color: $blue
+            display: inline-block
+            width: 100%
+            margin: 0
+            font-size: 1.2rem
+
+          #usage, #styleguide
+            width: 100%
+            padding: 12px 0
+            @include clearFix
+
+            li
+              width: 40%
+              float: left
+
+          #elements
+            padding: 16px
+            float: left
+            width: 66%
+
+            li
+              width: 33.33%
+              float: left
+
+          //vertical line
+          .vl
+            height: 90%
+            top: 50%
+            border-left: 1px solid $black
+            position: absolute
+            left: 31%
+            transform: translateY(-50%)
+    
+    .right
+      margin: 0
+
+      #lang
+        position: relative
+      .contact
+        background-color: $blue
+        border-radius: 32px
+        color: $white
+        padding: 14px 25px
+        font-size: 1.2rem
+    
