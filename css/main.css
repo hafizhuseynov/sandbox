@@ -238,7 +238,7 @@ header nav h1 {
 
 header nav h1 #O {
   display: inline-block;
-  background-image: url("/images/logo.svg");
+  background-image: url("../images/logo.svg");
   background-position-y: bottom;
   vertical-align: middle;
   width: 18px;
