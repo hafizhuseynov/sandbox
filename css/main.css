@@ -40,20 +40,6 @@ button, select {
           animation-duration: 0.3s;
 }
 
-.down {
-  -webkit-animation-name: down;
-          animation-name: down;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-}
-
-.fade-in {
-  -webkit-animation-name: fade-in;
-          animation-name: fade-in;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-
 .fade-out {
   -webkit-animation-name: fade-out;
           animation-name: fade-out;
@@ -83,50 +69,6 @@ button, select {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes down {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: .6;
-  }
-  100% {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-    opacity: 0;
-  }
-}
-
-@keyframes down {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: .6;
-  }
-  100% {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: .6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: .6;
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -248,15 +190,15 @@ button, select {
 }
 
 #info-top #wrapper h3.location .icon {
-  background-image: url("images/map.svg");
+  background-image: url("../images/map.svg");
 }
 
 #info-top #wrapper h3.email .icon {
-  background-image: url("images/send.svg");
+  background-image: url("../images/send.svg");
 }
 
 #info-top #wrapper h3.contactNumber .icon {
-  background-image: url("images/phone.svg");
+  background-image: url("../images/phone.svg");
 }
 
 #info-top .wrapper:after {
