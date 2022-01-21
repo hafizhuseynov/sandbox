@@ -248,15 +248,15 @@ button, select {
 }
 
 #info-top #wrapper h3.location .icon {
-  background-image: url("/images/map.svg");
+  background-image: url("images/map.svg");
 }
 
 #info-top #wrapper h3.email .icon {
-  background-image: url("/images/send.svg");
+  background-image: url("images/send.svg");
 }
 
 #info-top #wrapper h3.contactNumber .icon {
-  background-image: url("/images/phone.svg");
+  background-image: url("images/phone.svg");
 }
 
 #info-top .wrapper:after {
