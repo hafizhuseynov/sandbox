@@ -12,12 +12,12 @@ function handleDropdown(elements){
         if(isMouseHover === false ){
           elements[i].classList.replace('rise','fade-out')
           elements[i].style.display = 'none';
-          parentElement.style.color = 'black'
-        }
-      }, 80)
+          parentElement.style.color = '#252625'
+        };
+      },80)
       
     }, false);
-  
+
     parentElement.addEventListener("mouseover", function (event) {
       isMouseHover = true
       setTimeout(() => {
@@ -26,9 +26,8 @@ function handleDropdown(elements){
           elements[i].style.display = 'block';
           parentElement.style.color = '#4285F4';
         }
-      }, 50)
+      }, 80)
     }, false);
-
   };
 };
 

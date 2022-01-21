@@ -1,0 +1,51 @@
+#hero
+  margin: 48px 0
+  div.wrapper
+    padding: 48px 24px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 3%
+    .text, img
+
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: start
+
+    .text
+      width: 90%
+      h1
+        color: $lightBlack
+        padding: 24px 0
+        font-size: 3rem
+      
+      p
+        color: $lightBlack
+        font-size: 2rem
+        padding: 16px 0
+      
+      .button
+        font-size: 1.3rem
+        font-weight: lighter
+        margin: 24px 8px
+
+    .image
+      position: relative
+      img
+        display: inline-block
+        border-radius: 0 32px 32px 32px
+        
+      .dotted, .bottom-right
+        position: absolute
+        z-index: -1
+
+      .dotted
+        top: -65px
+        left: -80px
+
+      .bottom-right
+        right: -30px
+        bottom: -30px
+        
+        
+      

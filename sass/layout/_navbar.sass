@@ -7,30 +7,14 @@ header
     display: flex
     position: relative
     justify-content: space-between
-
-    h1
-      color: $black
-      user-select: none
-      cursor: pointer
-      margin: 16px 0
-      padding: 8px
-      white-space: nowrap
-
-      //Hexagon design in logo
-      #O
-        display: inline-block
-        background-image: url('../images/logo.svg')
-        background-position-y: bottom
-        vertical-align: middle
-        width: 18px
-        height: 18px
-        background-size: cover
+    font-size: 1.2rem
 
     .middle, .right
       display: flex
     
     .middle > li, .right > li
       margin: 0 16px
+      font-size: 1.2rem
       display: flex
       align-items: center
       cursor: pointer
@@ -60,8 +44,7 @@ header
         
         li:hover
           transform: translateY(-5%)
-
-          
+ 
       #pages, #projects, #blog, #blocks
         position: relative
       
@@ -114,10 +97,6 @@ header
 
       #lang
         position: relative
+      
       .contact
-        background-color: $blue
-        border-radius: 32px
-        color: $white
-        padding: 14px 25px
-        font-size: 1.2rem
-    
+        padding: 14px 32px
