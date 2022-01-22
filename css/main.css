@@ -388,8 +388,16 @@ header nav .middle {
 
 @media only screen and (min-width: 1280px) {
   header nav .middle {
-    width: 49%;
+    width: 52%;
   }
+}
+
+header nav .middle .label {
+  font-size: 1.1rem;
+}
+
+header nav .middle li {
+  white-space: nowrap;
 }
 
 header nav .middle #demos .menu {
