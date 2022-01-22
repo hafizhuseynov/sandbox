@@ -31,16 +31,18 @@ header
         position: static
         flex-direction: row
         justify-content: space-between
-        
+        gap: 8px
         width: 60%
         height: auto
         background-color: $white
+        max-width: auto
       
       @include mq(1280px)
-        width: 52%
+        max-width: 50%
 
       .label
-        font-size: 1.1rem
+        font-size: 1.2rem
+        font-weight: 500
 
       li
         white-space: nowrap

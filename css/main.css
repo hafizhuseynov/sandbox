@@ -380,20 +380,23 @@ header nav .middle {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 8px;
     width: 60%;
     height: auto;
     background-color: #F2F2F2;
+    max-width: auto;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   header nav .middle {
-    width: 52%;
+    max-width: 50%;
   }
 }
 
 header nav .middle .label {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 header nav .middle li {
