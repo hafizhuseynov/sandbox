@@ -3,15 +3,16 @@
   background-color: $blue
   border-radius: 32px
   color: $white
-  padding: 18px 24px
+  padding: 18px 20px
   font-weight: bold
   transition: 0.3s
+  white-space: nowrap
 
 .void
   background-color: $white
   color: $blue
-  border: 2px solid $blue
-  padding: 16px 24px
+  border: 3px solid $blue
+  padding: 16px 20px
 
 .void:hover
   background-color: $blue
@@ -19,3 +20,14 @@
 
 .button:hover
   transform: translateY(-10%)
+
+span[class*=bars], span[class*=times]
+    font-size: 1.5rem
+    display: inline-block
+    padding: 12px
+    color: $blue
+    @include mq(1024px)
+      display: none
+
+span[class*=down]
+  color: $blue

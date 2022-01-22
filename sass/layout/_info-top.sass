@@ -2,13 +2,18 @@
   background: $blue
   color: $white
   font-size: 0.9rem
-
+  margin-bottom: 0
   #wrapper
-    padding: 20px 0
+    padding: 8px 0
+
     h3 
-      float: right
-      margin-right: 20px
-      
+      width: 100%
+      text-align: center
+      padding: 1%
+      @include mq(769px)
+        width: auto
+        float: right
+        
     .icon
       display: inline-block
       background-repeat: no-repeat
@@ -19,17 +24,14 @@
 
     h3.location
       float: left
-
       .icon
         background-image: url('../images/map.svg')
         
     h3.email
-
       .icon
         background-image: url('../images/send.svg')
-        
+  
     h3.contactNumber
-      
       .icon
         background-image: url('../images/phone.svg')
 

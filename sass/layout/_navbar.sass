@@ -2,44 +2,56 @@ header
   position: sticky
   top: 0
   background-color: $white
-
+  margin-top: 0
+  
   nav
     display: flex
-    position: relative
+    align-items: center
     justify-content: space-between
-    font-size: 1.2rem
 
-    .middle, .right
-      display: flex
-    
-    .middle > li, .right > li
-      margin: 0 16px
-      font-size: 1.2rem
-      display: flex
-      align-items: center
+    h1
+      font-size: 2.5rem
+
+    li
       cursor: pointer
 
-      span[class*=down]
-        color: $blue
-
-      .label
-        display: inline-block
-        margin: 0 4px
-  
     .middle
+      display: flex
+      flex-direction: column
+      background-color: #BFBFBF
+      position: absolute
+      top: 0
+      left: -100%
+      height: 100vh
+      width: 100%
+      z-index: 1
+      transition: 0.5s
+      
+      @include mq(1024px)
+        position: static
+        flex-direction: row
+        justify-content: space-between
+        width: 60%
+        height: auto
+        background-color: $white
+      
+      @include mq(1280px)
+        width: 49%
+
+      li
+        margin-top
+
       #demos
         .menu
-          width: 100%
-          padding: 16px
+          padding: 32px
           background-color: $black
-          
+        
         li
-          width: 15.5%
-          border-radius: 16px
-          border: 2px solid white
-          height: 150px
           float: left
-          margin: 8px
+          width: 14.66666%
+          margin: 1%
+          border-radius: 16px
+          border: 1px solid white
           transition: 0.4s
         
         li:hover
@@ -47,7 +59,9 @@ header
  
       #pages, #projects, #blog, #blocks
         position: relative
-      
+        .menu
+          @include mq(1024px)
+            width: 200px
       #documentation
         .menu
           width: 100%
@@ -91,12 +105,40 @@ header
             position: absolute
             left: 31%
             transform: translateY(-50%)
-    
+      
+      .label
+        display: inline-block
+        margin: 0 4px
+
+      span[class*=down]
+        position: absolute
+        left: 0
+        @include mq(1024px)
+          position: static
+
+      span[class*=times]
+        position: absolute
+        right: 15px
+        top: 15px
+
     .right
-      margin: 0
+      display: flex
 
       #lang
+        margin-right: 12px
+        float: left
         position: relative
-      
-      .contact
-        padding: 14px 32px
+        white-space: nowrap
+
+        span
+          padding: 10px 0
+
+      #contact
+        display: none
+
+        .button
+          display: block
+          padding: 12px 24px
+
+        @include mq(1024px)
+          display: block

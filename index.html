@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script/main.js" defer></script>
+  <link rel="shortcut icon" href="./images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Sandbox</title>
@@ -20,8 +19,7 @@
   <section id="info-top" class="info-top">
     <div class="wrapper" id="wrapper">
       <h3 class="location" id="location"><span class="icon"></span> &nbsp; Moonshine St. 14/05 Light City </h3>
-      <h3 class="email" id="email"><span class="icon"></span> &nbsp; <a class="underline" href="mailto:logo@email.com">logo@email.com</a>
-      </h3>
+      <h3 class="email" id="email"><span class="icon"></span> &nbsp; <a class="underline" href="mailto:logo@email.com">logo@email.com</a></h3>
       <h3 class="contactNumber" id="contact-number"><span class="icon"></span> &nbsp; 00 (123) 456 78 90 </h3>
     </div>
   </section>
@@ -29,6 +27,7 @@
   <header>
     <nav>
       <h1 class="logo" id="logo">Sandb<span id="O"></span>x</h1>
+      
       <ul class="middle">
         <li id="demos">
           <span class="label">Demos </span>
@@ -62,8 +61,7 @@
           <ul class="menu">
             <li>
               <span>Services</span>
-              <span class="fa fa-caret-right"></span>
-              <span class="icon-right" class="fas fa-caret-right"></span>
+              <span class="icon-right fas fa-caret-right"></span>
 
               <ul class="menu">
                 <li>Service 1</li>
@@ -218,19 +216,21 @@
             
           </ul>
         </li>
+        <span style="display: none;" class="fas fa-times"></span>
       </ul>
 
       <ul class="right">
         <li id="lang">
-          <span class="label">EN </span> 
+          <span class="label">EN</span> 
           <span class="fa fa-caret-down"></span>
           <ul class="menu">
-            <li>EN</li>
-            <li>AZ</li>
-            <li>TR</li>
+            <li><span>EN</span></li>
+            <li><span>AZ</span></li>
+            <li><span>TR</span></li>
           </ul>
         </li>
-        <li><a class="button contact" href="mailto:logo@email.com">Contact</a></li>
+        <li id="contact"><a class="button contact" href="mailto:logo@email.com">Contact</a></li>
+        <span class="fas fa-bars"></span>
       </ul>
 
     </nav>
@@ -242,17 +242,16 @@
         <div class="text">
           <h1>We bring solutions to make life easier for our customers.</h1>
           <p>We have considered our solutions to support every stage growth.</p>
-          <div style="width: 100%;">
+          <div class="buttons">
             <a class="button" href="#">Explore Now</a>
             <a class="button void" href="#">Free Trial</a>
           </div>
         </div>
 
-        <div class="image">
-          <img class="bottom-right" width="90%" src="./images/bottom-right.svg" alt="">
-          <img src="./images/hero.png" width="100%"  alt="">
-          <img class="dotted" src="./images/dotted.svg" alt="">
-          
+        <div class="hero">
+            <img class="hero-image" src="./images/hero.png" width="100%"  alt="">
+            <img class="bottom-right" width="90%"  src="./images/bottom-right.svg" alt="">
+            <img class="dotted" width="42%"  src="./images/dotted.svg" alt="">
         </div>
       </div>
     </section>
