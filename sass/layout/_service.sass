@@ -1,0 +1,75 @@
+#service
+  .wrapper
+    h4,h2
+      text-align: center
+    
+    h4
+      font-size: 1.2rem
+      color: $gray
+      font-weight: 500
+
+    h2
+      font-size: 2.5rem
+      padding: 16px 0
+      color: $lightBlack
+
+    .row
+      @include mq(1024px)
+        display: flex
+        justify-content: space-between
+
+      .col-3
+        display: flex
+        align-items: center
+        padding: 24px    
+        @include mq(1024px)
+          flex-direction: column
+          justify-content: start
+
+        .thumb
+          margin-top: 0
+          span
+            width: 5rem
+            height: 5rem
+            display: inline-block
+            font-size: 2.5rem
+            @include flexCenter
+            padding: 16px
+            margin: 16px
+            border-radius: 50%
+            background-color: $blue
+            color: $white
+            @include mq(1024px)
+              width: 4rem
+              height: 4rem
+              font-size: 2rem
+
+        .text
+          display: flex
+          align-items: start
+          @include mq(1024px)
+            align-items: center
+
+          h3,p,a
+            text-align: left
+            padding: 12px 0
+            @include mq(1024px)
+              text-align: center
+
+          h3
+            white-space: nowrap
+            font-size: 1.5rem
+            
+          p
+            line-height: 1.5
+          
+          a
+            padding-bottom: 0
+            color: $blue
+
+          a:after
+            background-color: $blue
+        
+        .icon-right
+          padding-left: 4px
+          vertical-align: middle
