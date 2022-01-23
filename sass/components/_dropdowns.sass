@@ -5,22 +5,23 @@
   left: 0
   width: 100%
   background: $white
-  transition: .5s
+  transition: .4s
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 8px
   transition: 0.3s
-  cursor: default
   z-index: 99
+
   @include mq(1024px)
-    top: 42px
+    top: 56px
 
   li
     position: relative
-    padding: 12px
+    padding: 16px
     text-align: left
-
+    
     span
       margin: 0 auto
+      cursor: pointer
 
     //right icon
     span[class*=right]

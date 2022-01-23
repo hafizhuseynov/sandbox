@@ -8,14 +8,12 @@ header
     display: flex
     align-items: center
     justify-content: space-between
-
+    
     h1
       font-size: 2.5rem
 
-    li
-      cursor: pointer
-
     .middle
+      
       display: flex
       flex-direction: column
       background-color: #BFBFBF
@@ -30,60 +28,68 @@ header
       @include mq(1024px)
         position: static
         flex-direction: row
-        justify-content: space-between
-        gap: 8px
-        width: 60%
+        justify-content: center
+        max-width: 60%
         height: auto
         background-color: $white
-        max-width: auto
-      
+        
       @include mq(1280px)
-        max-width: 50%
+        max-width: 55%
 
       .label
         font-size: 1.2rem
         font-weight: 500
+        cursor: pointer
 
       li
+        margin: 0 auto
         white-space: nowrap
 
       #demos
         .menu
           padding: 32px
-          background-color: $black
+          background-color: $darkBlue
         
         li
           float: left
+          padding: 0
           width: 14.66666%
           margin: 1%
-          border-radius: 16px
-          border: 1px solid white
-          transition: 0.4s
+
+          img
+            border-radius: 8px
+            transition: 0.4s
+            cursor: pointer
         
-        li:hover
-          transform: translateY(-5%)
+          img:hover
+            transform: translateY(-5%)
  
       #pages, #projects, #blog, #blocks
         position: relative
         .menu
           @include mq(1024px)
             width: 200px
+            
       #documentation
+        flex-shrink: 2
         .menu
-          width: 100%
           padding: 16px
 
-          .container
+          .doc-left
             width: 33%
             float: left
-            @include clearFix
 
           .label
             color: $blue
             display: inline-block
+            cursor: default
             width: 100%
             margin: 0
-            font-size: 1.2rem
+            font-size: 1.3rem
+          
+          li
+            float: left
+            padding-left: 0
 
           #usage, #styleguide
             width: 100%
@@ -92,16 +98,14 @@ header
 
             li
               width: 40%
-              float: left
 
           #elements
-            padding: 16px
+            padding: 12px 0
             float: left
             width: 66%
 
             li
               width: 33.33%
-              float: left
 
           //vertical line
           .vl
@@ -138,6 +142,16 @@ header
 
         span
           padding: 10px 0
+          &.label
+            cursor: pointer
+        
+        li
+          padding: 0
+          
+          span
+            display: block
+            text-align: center
+            width: 100%
 
       #contact
         display: none

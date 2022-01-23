@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: none;
   font-weight: 400;
+  cursor: pointer;
 }
 
 main, section, header {
@@ -20,13 +21,7 @@ main, section, header {
 }
 
 main section {
-  margin: 30px 0;
-}
-
-@media only screen and (min-width: 1024px) {
-  main section {
-    margin: 90px 0;
-  }
+  padding: 5% 0;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -204,31 +199,31 @@ span[class*=down] {
   left: 0;
   width: 100%;
   background: #F2F2F2;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .4s;
+  transition: .4s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: default;
   z-index: 99;
 }
 
 @media only screen and (min-width: 1024px) {
   .menu {
-    top: 42px;
+    top: 56px;
   }
 }
 
 .menu li {
   position: relative;
-  padding: 12px;
+  padding: 16px;
   text-align: left;
 }
 
 .menu li span {
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .menu li span[class*=right] {
@@ -266,12 +261,13 @@ span[class*=down] {
   width: 30px;
   height: 30px;
   background-size: cover;
+  cursor: pointer;
 }
 
 #info-top {
   background: #4285F4;
   color: #F2F2F2;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 
@@ -347,10 +343,6 @@ header nav h1 {
   font-size: 2.5rem;
 }
 
-header nav li {
-  cursor: pointer;
-}
-
 header nav .middle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,48 +369,52 @@ header nav .middle {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 8px;
-    width: 60%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 60%;
     height: auto;
     background-color: #F2F2F2;
-    max-width: auto;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   header nav .middle {
-    max-width: 50%;
+    max-width: 55%;
   }
 }
 
 header nav .middle .label {
   font-size: 1.2rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 header nav .middle li {
+  margin: 0 auto;
   white-space: nowrap;
 }
 
 header nav .middle #demos .menu {
   padding: 32px;
-  background-color: #252625;
+  background-color: #1C3240;
 }
 
 header nav .middle #demos li {
   float: left;
+  padding: 0;
   width: 14.66666%;
   margin: 1%;
-  border-radius: 16px;
-  border: 1px solid white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-header nav .middle #demos li:hover {
+header nav .middle #demos li img {
+  border-radius: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+header nav .middle #demos li img:hover {
   -webkit-transform: translateY(-5%);
           transform: translateY(-5%);
 }
@@ -433,25 +429,32 @@ header nav .middle #pages, header nav .middle #projects, header nav .middle #blo
   }
 }
 
+header nav .middle #documentation {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
 header nav .middle #documentation .menu {
-  width: 100%;
   padding: 16px;
 }
 
-header nav .middle #documentation .menu .container {
+header nav .middle #documentation .menu .doc-left {
   width: 33%;
   float: left;
-  clear: both;
-  display: table;
-  content: "";
 }
 
 header nav .middle #documentation .menu .label {
   color: #4285F4;
   display: inline-block;
+  cursor: default;
   width: 100%;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+header nav .middle #documentation .menu li {
+  float: left;
+  padding-left: 0;
 }
 
 header nav .middle #documentation .menu #usage, header nav .middle #documentation .menu #styleguide {
@@ -464,18 +467,16 @@ header nav .middle #documentation .menu #usage, header nav .middle #documentatio
 
 header nav .middle #documentation .menu #usage li, header nav .middle #documentation .menu #styleguide li {
   width: 40%;
-  float: left;
 }
 
 header nav .middle #documentation .menu #elements {
-  padding: 16px;
+  padding: 12px 0;
   float: left;
   width: 66%;
 }
 
 header nav .middle #documentation .menu #elements li {
   width: 33.33%;
-  float: left;
 }
 
 header nav .middle #documentation .menu .vl {
@@ -525,6 +526,20 @@ header nav .right #lang {
 
 header nav .right #lang span {
   padding: 10px 0;
+}
+
+header nav .right #lang span.label {
+  cursor: pointer;
+}
+
+header nav .right #lang li {
+  padding: 0;
+}
+
+header nav .right #lang li span {
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 header nav .right #contact {
@@ -634,7 +649,7 @@ header nav .right #contact .button {
   margin: 12px 8px;
 }
 
-#hero .wrapper .hero {
+#hero .wrapper .hero-image-container {
   padding: 0;
   position: relative;
   width: 75%;
@@ -642,29 +657,48 @@ header nav .right #contact .button {
 }
 
 @media only screen and (min-width: 1024px) {
-  #hero .wrapper .hero {
+  #hero .wrapper .hero-image-container {
     width: 100%;
   }
 }
 
-#hero .wrapper .hero .hero-image {
+#hero .wrapper .hero-image-container .hero-image {
   display: inline-block;
   margin: 0;
   width: 100%;
   border-radius: 0 24px 24px 24px;
 }
 
-#hero .wrapper .hero .dotted, #hero .wrapper .hero .bottom-right {
+#hero .wrapper .hero-image-container .dotted, #hero .wrapper .hero-image-container .bottom-right {
   position: absolute;
   z-index: -1;
 }
 
-#hero .wrapper .hero .dotted {
-  top: -8%;
-  left: -8%;
+#hero .wrapper .hero-image-container .dotted {
+  width: 20%;
+  top: -7%;
+  left: -7%;
 }
 
-#hero .wrapper .hero .bottom-right {
-  right: -8%;
-  bottom: -8%;
+#hero .wrapper .hero-image-container .bottom-right {
+  width: 90%;
+  right: -7%;
+  bottom: -7%;
+}
+
+#customers .wrapper span {
+  text-align: center;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 12px;
+  width: 100%;
+  margin: 0 auto;
+  color: #9c9c9c;
+}
+
+@media only screen and (min-width: 768px) {
+  #customers .wrapper span {
+    width: 16%;
+    padding: 0;
+  }
 }
