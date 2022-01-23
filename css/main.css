@@ -678,12 +678,12 @@ header nav .right #contact .button {
   border-radius: 0 24px 24px 24px;
 }
 
-#hero .wrapper .hero-image-container .dotted, #hero .wrapper .hero-image-container .bottom-right {
+#hero .wrapper .hero-image-container .top-left, #hero .wrapper .hero-image-container .bottom-right {
   position: absolute;
   z-index: -1;
 }
 
-#hero .wrapper .hero-image-container .dotted {
+#hero .wrapper .hero-image-container .top-left {
   width: 20%;
   top: -7%;
   left: -7%;
@@ -746,11 +746,12 @@ header nav .right #contact .button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 @media only screen and (min-width: 1024px) {
   #service .wrapper .row .col-3 {
+    padding: 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -843,4 +844,156 @@ header nav .right #contact .button {
 #service .wrapper .row .col-3 .icon-right {
   padding-left: 4px;
   vertical-align: middle;
+}
+
+#steps .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  #steps .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#steps .wrapper .hero-image-container {
+  margin-bottom: 100px;
+  padding: 0;
+  position: relative;
+  width: 75%;
+  height: auto;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1024px) {
+  #steps .wrapper .hero-image-container {
+    margin-bottom: 0;
+    width: 130%;
+  }
+}
+
+#steps .wrapper .hero-image-container .hero-image {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  border-radius: 24px;
+}
+
+#steps .wrapper .hero-image-container .top-left, #steps .wrapper .hero-image-container .bottom-right {
+  position: absolute;
+  z-index: -1;
+}
+
+#steps .wrapper .hero-image-container .top-left {
+  width: 30%;
+  top: -10%;
+  left: -10%;
+}
+
+#steps .wrapper .hero-image-container .bottom-right {
+  width: 90%;
+  right: -7%;
+  bottom: -7%;
+}
+
+#steps .wrapper .text {
+  padding: 0 8%;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+  #steps .wrapper .text {
+    width: 100%;
+    padding-right: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+#steps .wrapper .text h2 {
+  font-size: 2.5rem;
+  padding-bottom: 8%;
+}
+
+#steps .wrapper .text h3 {
+  padding-bottom: 5%;
+  font-size: 1.5rem;
+  color: #858383;
+}
+
+#steps .wrapper .text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  #steps .wrapper .text ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 5% 0;
+  }
+}
+
+#steps .wrapper .text ul .thumb {
+  text-align: center;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #4285F4;
+  border-radius: 50%;
+}
+
+#steps .wrapper .text ul .thumb span {
+  font-size: 1.4rem;
+  color: #F2F2F2;
+}
+
+#steps .wrapper .text ul .step h4, #steps .wrapper .text ul .step p {
+  padding: 5%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  #steps .wrapper .text ul .step h4, #steps .wrapper .text ul .step p {
+    text-align: left;
+    padding-top: 0;
+    padding-right: 0;
+  }
+}
+
+#steps .wrapper .text ul .step h4 {
+  font-size: 1.5rem;
+}
+
+#steps .wrapper .text ul .step p {
+  color: #858383;
 }

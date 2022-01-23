@@ -1,0 +1,95 @@
+#steps
+  .wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include mq(1024px)
+      flex-direction: row
+      align-items: 
+
+    .hero-image-container
+      margin-bottom: 100px
+      padding: 0 
+      position: relative
+      width: 75%
+      height: auto
+      z-index: -1
+
+      @include mq(1024px)
+        margin-bottom: 0
+        width: 130% 
+
+      .hero-image
+        display: inline-block
+        margin: 0
+        width: 100%
+        border-radius: 24px
+        
+      .top-left, .bottom-right
+        position: absolute
+        z-index: -1
+
+      .top-left
+        width: 30%
+        top: -10%
+        left: -10%
+
+      .bottom-right
+        width: 90%
+        right: -7%
+        bottom: -7%
+  
+    .text
+      padding: 0 8%
+      text-align: left
+
+      @include mq(1024px)
+        width: 100%
+        padding-right: 0 
+        align-items: start
+
+      h2
+        font-size: 2.5rem
+        padding-bottom: 8%
+
+      h3
+        padding-bottom: 5%
+        font-size: 1.5rem
+        color: $gray
+
+      ul
+        li
+          display: flex
+          flex-direction: column
+          align-items: center
+          @include mq(1024px)
+            display: flex
+            flex-direction: row
+            align-items: start
+            padding: 5% 0
+              
+        .thumb
+          text-align: center
+          line-height: 3rem
+          width: 3rem
+          height: 3rem
+          background-color: $blue
+          border-radius: 50%
+
+          span
+            font-size: 1.4rem
+            color: $white
+
+        .step
+          h4,p
+            padding: 5%
+            text-align: center
+            @include mq(1024px)
+              text-align: left
+              padding-top: 0
+              padding-right: 0
+
+          h4
+            font-size: 1.5rem
+          p
+            color: $gray
