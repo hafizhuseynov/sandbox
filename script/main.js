@@ -79,4 +79,4 @@ navBarBtn.addEventListener('click', ()=> {
 closeNavBarBtn.addEventListener('click', ()=>{
   document.querySelector('.middle').style.left = '-100%'
   closeNavBarBtn.style.display = 'none';
-})
+});

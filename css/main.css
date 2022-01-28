@@ -288,33 +288,33 @@ span[class*=down] {
   margin-bottom: 0;
 }
 
-#info-top #wrapper {
+#info-top div.wrapper {
   padding: 8px 0;
 }
 
-#info-top #wrapper h3 {
+#info-top div.wrapper h3 {
   width: 100%;
   text-align: center;
   padding: 1%;
 }
 
 @media only screen and (min-width: 769px) {
-  #info-top #wrapper h3 {
+  #info-top div.wrapper h3 {
     width: auto;
     float: right;
   }
 }
 
-#info-top #wrapper a {
+#info-top div.wrapper a {
   display: inline-block;
   color: #F2F2F2;
 }
 
-#info-top #wrapper a:after {
+#info-top div.wrapper a:after {
   background-color: #F2F2F2;
 }
 
-#info-top #wrapper .icon {
+#info-top div.wrapper .icon {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -323,19 +323,19 @@ span[class*=down] {
   width: 30px;
 }
 
-#info-top #wrapper h3.location {
+#info-top div.wrapper h3.location {
   float: left;
 }
 
-#info-top #wrapper h3.location .icon {
+#info-top div.wrapper h3.location .icon {
   background-image: url("../images/map.svg");
 }
 
-#info-top #wrapper h3.email .icon {
+#info-top div.wrapper h3.email .icon {
   background-image: url("../images/send.svg");
 }
 
-#info-top #wrapper h3.contactNumber .icon {
+#info-top div.wrapper h3.contactNumber .icon {
   background-image: url("../images/phone.svg");
 }
 
@@ -996,5 +996,42 @@ header nav .right #contact .button {
 
 #steps .wrapper .text ul .step p {
   color: #858383;
+}
+
+#projects .wrapper {
+  width: 95%;
+}
+
+#projects .wrapper .carousel .carousel-cell {
+  height: auto;
+  width: 100%;
+  margin: 0 0.5%;
+  counter-increment: carousel-cell;
+}
+
+@media only screen and (min-width: 768px) {
+  #projects .wrapper .carousel .carousel-cell {
+    width: 49.5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #projects .wrapper .carousel .carousel-cell {
+    width: 32.64%;
+  }
+}
+
+#projects .wrapper .carousel .carousel-cell img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+#projects .wrapper .carousel .carousel-cell .dot:last-child {
+  display: none;
+}
+
+#projects h2, #projects h3 {
+  text-align: center;
+  padding: 16px;
 }
 /*# sourceMappingURL=main.css.map */
