@@ -998,40 +998,82 @@ header nav .right #contact .button {
   color: #858383;
 }
 
-#projects .wrapper {
-  width: 95%;
-}
-
-#projects .wrapper .carousel .carousel-cell {
-  height: auto;
-  width: 100%;
-  margin: 0 0.5%;
-  counter-increment: carousel-cell;
-}
-
-@media only screen and (min-width: 768px) {
-  #projects .wrapper .carousel .carousel-cell {
-    width: 49.5%;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
-  #projects .wrapper .carousel .carousel-cell {
-    width: 32.64%;
+  #projects .wrapper {
+    width: 95%;
   }
 }
 
-#projects .wrapper .carousel .carousel-cell img {
-  width: 100%;
-  border-radius: 12px;
+#projects .wrapper .swiper div.swiper-slide {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
-#projects .wrapper .carousel .carousel-cell .dot:last-child {
+#projects .wrapper .swiper div.swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 16px;
+}
+
+#projects .wrapper .swiper div.swiper-slide a {
+  position: absolute;
+  display: block;
+  line-height: 3;
+  text-align: center;
+  opacity: 0;
+  right: 0;
+  bottom: 8%;
+  background: rgba(255, 255, 255, 0.5);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+#projects .wrapper .swiper .swiper-slide:hover a {
+  right: 8%;
+  opacity: 1;
+}
+
+#projects .wrapper .swiper div[class*="swiper-button"] {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #F2F2F2;
+  color: #252625;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+#projects .wrapper .swiper div[class*="swiper-button"]::after {
   display: none;
+}
+
+#projects .wrapper .swiper .swiper-pagination {
+  position: relative;
+  margin-top: 24px;
 }
 
 #projects h2, #projects h3 {
   text-align: center;
-  padding: 16px;
+  padding-bottom: 3rem;
+}
+
+#projects h2 {
+  font-size: 0.9rem;
+  color: #858383;
+}
+
+#projects h3 {
+  font-size: 2rem;
+  color: #252625;
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,16 +5,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script/main.js" defer></script>
 	<script src="https://kit.fontawesome.com/e20a249133.js" crossorigin="anonymous"></script>
-	<!-- <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js" defer></script> -->
-	<script src="/script/flickity.js" defer></script>
+	<script type="module" src="https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js" defer></script>
+	<script src="/script/main.js" defer></script>
+	<script type="module" src="/script/carousel.js" defer></script>
+
 	<link rel="shortcut icon" href="./images/logo.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
 	<link rel="stylesheet" href="css/main.css">
 	<title>Sandbox</title>
 </head>
@@ -384,15 +385,50 @@
 		<section class="projects" id="projects">
 			<div class="wrapper">
 				<h2>Latest Projects</h2>
-				<h3>Check out some of our awesome projects with creative ideas and great design.</h3>
-				<div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="1"></div>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="2"></div>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="3"></div>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="4"></div>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="5"></div>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="6"></div>
-					<div class="carousel-cell"><img src="/images/1.jpg" alt="7"></div>
+				<h3>Check out some of our awesome projects <br/> with creative ideas and great design.</h3>
+		
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft" href="#"><span class="fas fa-link"></span></a>
+						</div>
+						
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft"  href="#"><span class="fas fa-link"></span></a>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft"  href="#"><span class="fas fa-link"></span></a>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft"  href="#"><span class="fas fa-link"></span></a>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft"  href="#"><span class="fas fa-link"></span></a>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft"  href="#"><span class="fas fa-link"></span></a>
+						</div>
+
+						<div class="swiper-slide">
+							<img src="https://picsum.photos/500/350" alt="1">
+							<a class="toLeft"  href="#"><span class="fas fa-link"></span></a>
+						</div>
+					</div>
+
+					<div class="swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
+					<div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+					
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>
@@ -415,5 +451,4 @@
 
 	</footer>
 </body>
-
 </html>
