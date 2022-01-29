@@ -1,4 +1,4 @@
-const menuAll = document.querySelectorAll('.menu');
+const menuAll = document.querySelectorAll('.middle .menu');
 const navBarBtn = document.querySelector('.fa-bars');
 const closeNavBarBtn = document.querySelector('.fa-times');
 
@@ -68,8 +68,30 @@ function handleDropdown(elements){
   };
 };
 
+function handleLanguageSwitch(){
+	const lang = document.getElementById('lang');
+	const langMenu = document.querySelector('.right .menu');
+	let labelLang = lang.querySelector('.label');
+
+	lang.addEventListener('click',()=>{
+		showMenu(langMenu);
+	});
+
+	langMenu.addEventListener("mousedown", (e)=>{
+		labelLang.textContent = e.target.textContent;
+		closeMenu(langMenu);
+	});
+
+	document.addEventListener('mousedown', (e)=>{
+		if(e.target.parentElement.parentElement.id !== 'langMenu'){
+			closeMenu(langMenu);
+		};
+	});
+}
+
 setDropdowns(menuAll);
 handleDropdown(menuAll);
+handleLanguageSwitch();
 
 navBarBtn.addEventListener('click', ()=> {
   document.querySelector('.middle').style.left = 0;
