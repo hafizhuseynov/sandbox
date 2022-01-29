@@ -1,56 +1,8 @@
 #projects
-	.wrapper
-		@include mq(1024px)
-			width: 95%
-		.swiper
-
-			div.swiper-slide
-				cursor: grab
-
-				img
-					display: block
-					width: 100%
-					object-fit: cover
-					user-select: none
-					border-radius: 16px
-					
-				a
-					position: absolute
-					display: block
-					line-height: 3
-					text-align: center
-					opacity: 0
-					right: 0
-					bottom: 8%
-					background: rgba(255, 255, 255, 0.5)
-					width: 3rem
-					height: 3rem
-					border-radius: 50%
-					transition: 0.4s ease-out
-					
-			.swiper-slide:hover a
-				right: 8%
-				opacity: 1
-
-			div[class*="swiper-button"]
-				transform: translateY(-50%)
-				background-color: $white
-				color: $black
-				width: 2.5rem
-				height: 2.5rem
-				border-radius: 50%
-				font-size: 1rem
-
-			div[class*="swiper-button"]::after
-				display: none
-    
-			.swiper-pagination
-				position: relative
-				margin-top: 24px
-	
 	h2,h3
 		text-align: center
-		padding-bottom: 3rem
+		padding-bottom: 2rem
+		line-height: 1.5
 
 	h2
 		font-size: 0.9rem
@@ -59,3 +11,68 @@
 	h3
 		font-size: 2rem
 		color: $black
+
+	.wrapper
+		@include mq(1024px)
+			width: 95%
+
+		.swiper
+			div.swiper-slide
+
+				img
+					display: block
+					width: 100%
+					object-fit: cover
+					user-select: none
+					border-radius: 16px
+					cursor: grab
+					
+				a
+					display: inline-block
+					color: $black
+					position: absolute
+					opacity: 0
+					right: 0
+					bottom: 8%
+					text-align: center
+					transition: 0.4s ease-out
+
+					span
+						background: rgba(255, 255, 255, 0.7)
+	
+			.swiper-slide:hover a
+				transform: translateX(-50%)
+				opacity: 1
+			
+			div[class*="swiper-button"]
+				width: auto
+				height: auto
+				transform: translateY(-50%)
+				border-radius: 50%
+				background-color: $white
+				text-align: center
+				
+			div.swiper-button-prev
+				transform: translate(50%, -50%)
+				left: 0
+
+			div.swiper-button-next
+				transform: translate(-50%, -50%)
+				right: 0
+
+			div[class*="swiper-button"]::after
+				display: none
+    
+			span.fas
+				display: block
+				color: $black
+				line-height: 3
+				width: 3rem
+				height: 3rem
+				border-radius: 50%
+				cursor: pointer
+
+			.swiper-pagination
+				position: relative
+				margin-top: 24px
+	

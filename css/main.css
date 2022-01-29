@@ -406,7 +406,7 @@ header nav .middle {
 
 @media only screen and (min-width: 1280px) {
   header nav .middle {
-    max-width: 55%;
+    max-width: 60%;
   }
 }
 
@@ -998,15 +998,26 @@ header nav .right #contact .button {
   color: #858383;
 }
 
+#projects h2, #projects h3 {
+  text-align: center;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+}
+
+#projects h2 {
+  font-size: 0.9rem;
+  color: #858383;
+}
+
+#projects h3 {
+  font-size: 2rem;
+  color: #252625;
+}
+
 @media only screen and (min-width: 1024px) {
   #projects .wrapper {
     width: 95%;
   }
-}
-
-#projects .wrapper .swiper div.swiper-slide {
-  cursor: -webkit-grab;
-  cursor: grab;
 }
 
 #projects .wrapper .swiper div.swiper-slide img {
@@ -1019,61 +1030,70 @@ header nav .right #contact .button {
       -ms-user-select: none;
           user-select: none;
   border-radius: 16px;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 #projects .wrapper .swiper div.swiper-slide a {
+  display: inline-block;
+  color: #252625;
   position: absolute;
-  display: block;
-  line-height: 3;
-  text-align: center;
   opacity: 0;
   right: 0;
   bottom: 8%;
-  background: rgba(255, 255, 255, 0.5);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
+  text-align: center;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
 
+#projects .wrapper .swiper div.swiper-slide a span {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 #projects .wrapper .swiper .swiper-slide:hover a {
-  right: 8%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 1;
 }
 
 #projects .wrapper .swiper div[class*="swiper-button"] {
+  width: auto;
+  height: auto;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #F2F2F2;
-  color: #252625;
-  width: 2.5rem;
-  height: 2.5rem;
   border-radius: 50%;
-  font-size: 1rem;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+#projects .wrapper .swiper div.swiper-button-prev {
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  left: 0;
+}
+
+#projects .wrapper .swiper div.swiper-button-next {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  right: 0;
 }
 
 #projects .wrapper .swiper div[class*="swiper-button"]::after {
   display: none;
 }
 
+#projects .wrapper .swiper span.fas {
+  display: block;
+  color: #252625;
+  line-height: 3;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 #projects .wrapper .swiper .swiper-pagination {
   position: relative;
   margin-top: 24px;
-}
-
-#projects h2, #projects h3 {
-  text-align: center;
-  padding-bottom: 3rem;
-}
-
-#projects h2 {
-  font-size: 0.9rem;
-  color: #858383;
-}
-
-#projects h3 {
-  font-size: 2rem;
-  color: #252625;
 }
 /*# sourceMappingURL=main.css.map */
