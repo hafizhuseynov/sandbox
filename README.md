@@ -1,1 +1,1 @@
-# Link to to preview | [Sandbox](https://hafizhuseynov.github.io/sandbox/)
+# Link to preview | [Sandbox](https://hafizhuseynov.github.io/sandbox/)
