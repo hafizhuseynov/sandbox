@@ -74,7 +74,11 @@ function handleLanguageSwitch(){
 	let labelLang = lang.querySelector('.label');
 
 	lang.addEventListener('click',()=>{
-		showMenu(langMenu);
+		if(langMenu.style.display === 'none'){
+			showMenu(langMenu);
+		}else{
+			closeMenu(langMenu);
+		}
 	});
 
 	langMenu.addEventListener("mousedown", (e)=>{
@@ -82,11 +86,11 @@ function handleLanguageSwitch(){
 		closeMenu(langMenu);
 	});
 
-	document.addEventListener('mousedown', (e)=>{
-		if(e.target.parentElement.parentElement.id !== 'langMenu'){
-			closeMenu(langMenu);
-		};
-	});
+	// document.addEventListener('mousedown', (e)=>{
+	// 	if(e.target.parentElement.parentElement.id !== 'langMenu'){
+	// 		closeMenu(langMenu);
+	// 	};
+	// });
 }
 
 setDropdowns(menuAll);
